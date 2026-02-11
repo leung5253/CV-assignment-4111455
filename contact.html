@@ -1,0 +1,109 @@
+<!doctype html>
+<head>
+  <title>CV</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    .text {
+      border: none;
+      border-radius: 10px;
+      height: 30px;
+      padding: 5px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="./index.html">
+      <button id="navbtn"><h2>About Me</h2></button>
+    </a>
+    <div class="dropdown">
+      <h2 style="color: white">Experience</h2>
+      <div class="dropdown-content">
+        <div>
+          <a href="./education.html">
+            <button class="dropdown-button"><h3>Education</h3></button>
+          </a>
+        </div>
+        <div>
+          <a href="./internship.html">
+            <button class="dropdown-button"><h3>Internship</h3></button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="./contact.html">
+      <button id="navbtn"><h2>Contact</h2></button>
+    </a>
+  </nav>
+
+  <div class="main">
+    <div>
+      <h2>Contact Information</h2>
+      <p style="font-size: 18px">Email: tyl553@gmail.com</p>
+      <p style="font-size: 18px">Phone: +852 5115 9561</p>
+    </div>
+  </div>
+  <div class="main" style="margin-top: 20px">
+    <div>
+      <form id="contactform" onsubmit="jsalert()">
+        <label for="title">Title:</label><br />
+        <select
+          id="title"
+          name="title"
+          style="
+            width: 200px;
+            height: 40px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+          "
+        >
+          <option value="" selected disabled>Select your title</option>
+          <option value="Mr">Mr.</option>
+          <option value="Mrs">Mrs.</option>
+          <option value="Ms">Ms.</option></select
+        ><br /><br />
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          class="text"
+          placeholder="Enter your name"
+        /><br /><br />
+        <label for="email">Email:</label><br />
+        <input
+          type="text"
+          class="text"
+          placeholder="Enter your email"
+        /><br /><br />
+        <label for="mes">Write your message down to contact me:</label><br />
+        <textarea
+          class="text"
+          style="width: 600px; height: 200px"
+          placeholder="Enter your message"
+        ></textarea
+        ><br /><br />
+        <input
+          type="submit"
+          style="
+            border: none;
+            background-color: white;
+            border-radius: 999px;
+            box-shadow: 1px 1px 5px grey;
+            width: 80px;
+            height: 40px;
+            font-size: 18px;
+            cursor: pointer;
+          "
+        />
+      </form>
+    </div>
+  </div>
+</body>
+
+<script>
+  function jsalert() {
+    alert("Thank you for your message! I will reply to you soon.");
+  }
+</script>

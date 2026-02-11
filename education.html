@@ -1,0 +1,89 @@
+<!doctype html>
+<head>
+  <title>CV</title>
+  <link rel="stylesheet" href="./style.css" />
+  <style>
+    li {
+      padding: 10px;
+      color: #111125;
+      font-size: 18px;
+    }
+    .project-block {
+      width: 500px;
+      height: 300px;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 1px 1px 5px gray;
+      background-color: #c0ddee;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="./index.html">
+      <button id="navbtn"><h2>About Me</h2></button>
+    </a>
+    <div class="dropdown">
+      <h2 style="color: white">Experience</h2>
+      <div class="dropdown-content">
+        <div>
+          <a href="./education.html">
+            <button class="dropdown-button"><h3>Education</h3></button>
+          </a>
+        </div>
+        <div>
+          <a href="./internship.html">
+            <button class="dropdown-button"><h3>Internship</h3></button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <a href="./contact.html">
+      <button id="navbtn"><h2>Contact</h2></button>
+    </a>
+  </nav>
+
+  <div class="main">
+    <div style="width: 500px">
+      <h2>Lingnan University</h2>
+      <h3>2023-Present</h3>
+      <p style="font-size: 18px">
+        Bachelor of Science (Hons) - Major in Data Science
+      </p>
+      <p style="font-size: 18px">cGPA: 3.36/4</p>
+      <p style="font-size: 18px">(Award: Dean’s List, Lingnan University)</p>
+    </div>
+  </div>
+  <div class="main">
+    <div class="project-block">
+      <h2>Project 1</h2>
+      <h3 style="color: #0051ff">Develop a Game</h3>
+      <ul>
+        <li>Python Programming, LU Grade: A</li>
+        <li>
+          Conducted modular programming to separate the program into many
+          different parts for easier testing and maintenance.
+        </li>
+        <li>
+          Reduced complexity by writing clean code and minimizing the program
+          lines to save computer resources.
+        </li>
+      </ul>
+    </div>
+    <div class="project-block">
+      <h2>Project 2</h2>
+      <h3 style="color: #0051ff">Create a Phone Directory System</h3>
+      <ul>
+        <li>Python Programming, LU Grade: A-</li>
+        <li>
+          Utilized different types of data structures such as dictionaries and
+          lists to store phone contacts effectively.
+        </li>
+        <li>
+          Made a simple menu to add, delete and search in the list for better
+          user experience.
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
